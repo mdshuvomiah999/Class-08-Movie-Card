@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asap:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  background-color: aliceblue;
+}
+
+.card-wrapper {
+  width: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px #cbc4c4, -5px -5px 20px #ffffff;
+}
+.card-image {
+  height: 450px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 17px;
+  /* background-color: #222831; */
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-image img {
+  width: 400px;
+}
+.card-image img:hover {
+  filter: grayscale(1);
+}
+#imdb-reating {
+  color: wheat;
+  background-color: crimson;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 8px;
+  border-radius: 0 0 5px 0;
+  font-weight: bold;
+}
+#rotten-rating {
+  position: absolute;
+  background-color: indianred;
+  color: white;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 0 0 0 5px;
+}
+.card-details h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.card-details p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 3px;
+}
+.card-details p:nth-child(2) {
+  color: crimson;
+  font-weight: 700;
+}
+.card-details a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: white;
+  background-color: crimson;
+  display: block;
+  padding: 5px 0;
+  border-radius: 3px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card-details a:hover {
+  background-color: rgb(185, 17, 51);
+  letter-spacing: 10px;
+}
+.card-details a:active {
+  background-color: rgb(233, 33, 73);
+}
